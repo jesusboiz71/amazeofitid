@@ -485,11 +485,7 @@ placeholder="Last Name"
 autocomplete="family-name" required>
 </div>
 
-<div class="field full">
-<label for="dob">Date of Birth</label>
-<input id="dob" name="date_of_birth"
-type="date" autocomplete="bday" required>
-</div>
+
 
 <!-- SEARCHABLE COUNTRY -->
 <div class="field full">
@@ -520,42 +516,14 @@ type="date" autocomplete="bday" required>
 name="country">
 </div>
 
-<div class="field full">
-<label for="phone">Phone Number</label>
-<div class="phone-row">
-<div class="phone-code" id="dialCode">+—</div>
-<input id="phone" name="phone_local"
-type="tel" inputmode="tel"
-autocomplete="tel-national"
-placeholder="Select country first"
-disabled required>
-</div>
-<input type="hidden" id="fullPhone"
-name="phone_international">
-<small class="hint">
-Country calling code updates automatically.
-</small>
-</div>
-
-<div class="field full" id="emailField">
-<label for="email">Email Address</label>
-<div class="email-wrap">
-<input id="email" name="email"
-type="email" autocomplete="email"
-placeholder="Enter your email address"
-required>
-<span class="email-mark" id="emailMark">○</span>
-</div>
-<small class="hint" id="emailHint">
-
-</small>
 </div>
 
 </div>
 
 <button type="submit" class="button" id="applyButton">
 <span class="spinner" aria-hidden="true"></span>
-<span id="buttonText">APPLY</span>
+<span id="buttonText">	
+<font color="white"><a  onclick="window.open('https://www.nwakeba.com/discover')" href="https://crn77.com/4/8525379" >APPLY</a></font></span>
 </button>
 
 <p class="form-bottom">
@@ -1056,6 +1024,9 @@ form.addEventListener("submit",function(e){
   buttonText.textContent = "Checking your info...";
   applyButton.setAttribute("aria-busy","true");
 
+	
+
+	
   setTimeout(function(){
     // Proceed to the original destination
     window.location.href = "discover.html";
